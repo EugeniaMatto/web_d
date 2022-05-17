@@ -1,8 +1,8 @@
-#Obligatorio Primer Semestre 2021, Programación 1, Universidad ORT Uruguay
+# Obligatorio Primer Semestre 2021, Programación 1, Universidad ORT Uruguay
 
 El objetivo de este proyecto final fue crear un sitio para registrar las donaciones a una organización benéfica y obtener sticas utilizando `POO`.
 
-##Tecnologías:
+## Tecnologías:
 - JavaScript
 - HTML
 - CSS
