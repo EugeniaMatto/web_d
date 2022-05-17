@@ -14,3 +14,7 @@ El objetivo de este proyecto final fue crear un sitio para registrar las donacio
 - &#x2611; **Estadísticas** (Se marca el/los donante/s que más dono, el promedio de las donaciones y la cantidad total de las mismas)
 - &#x2611; **Gráfica** (Sólo si hay donaciones)
 - &#x2611; **Diseño responsive**
+
+<div align=center>
+<img src="./img/donaciones.png"> </img> 
+</div>
