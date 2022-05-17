@@ -1,0 +1,134 @@
+/*  Obligatorio Primer Semestre 2021, Programación 1, Maria Matto 227056, Tatiana Poznanski 221056 */
+
+body{
+    background-color: #e6e3e3;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+header{
+    width: 20%;
+    background-color: #e6e3e3;
+    float: left;
+    text-align: center;
+    height: 100%;
+    padding:2%;  
+}
+article{
+    width:65%;
+    float:right;
+    padding: 5%;
+    background-color: #bababa;
+    height: 100vh;
+}
+footer{
+    width:100%;
+    text-align: center;
+    clear:both;
+    padding:1%;
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+.p1{
+    display:inline;
+}
+.divstats{
+    margin: 20px;
+} 
+ul {
+    padding-left: 20px;
+    list-style-type: none;
+} 
+ul li {
+    padding-left: 20px;
+    background-image: url("../img/amarillo.png");
+    background-position: 0 0;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+}
+#titulo1{
+    font-size: 30px;
+}
+#imagen{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+.botones1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    margin:5%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(133, 197, 240);
+    border: 2px solid #0016b0;
+    color: rgb(104, 9, 96);
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: underline rgb(104, 9, 96);
+}
+.botones1:hover{
+    background-color: rgb(240, 249, 255);
+}
+#espacio{
+    height: 30px;
+    
+}
+.stats{
+    color:white;
+    background-color: #365885;
+    border-radius: 15px;
+    padding: 1px;
+    font-weight: 250;
+    font-style: italic;
+    border: 2px solid #839ce0;
+    width: 100%;
+}
+.separadorstats{
+  height: 30px;
+  
+}
+table, td, th {
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+ 
+}
+td,th{
+    padding-inline: 10px;
+}
+.resaltar{
+    background-color: yellow;
+}
+#separador2{
+height: 20px;
+}
+.titulo{
+    font-size: 20px;
+}
+.verde{
+    color:green;
+}
+.rojo{
+    color:rgb(201, 0, 0);
+}
+select:required:invalid {
+    color: #666;
+  }
+option[value=""][disabled] {
+    display: none;
+  }
+
+
+@media screen and (max-width: 699px) {
+    header{
+      width: 95%;
+      display: inline-block;
+    }
+    article{
+        display: inline-block;
+        width: 95%
+    }
+  }

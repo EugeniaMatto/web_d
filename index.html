@@ -1,0 +1,102 @@
+<!--  Obligatorio Primer Semestre 2021, Programación 1, Maria Matto 227056, Tatiana Poznanski 221056  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de donaciones</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <script src="js/clases.js"></script>
+	<script src="js/funciones.js"></script>
+    <script  src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="titulo1" >Sistema de donaciones</h1>
+        <img src="img/go.jpg" alt="logo go" id="imagen" width="177" height="161">
+        <nav id="BotonesHeader">
+            <a href="index.html#registroDonantes"  class="botones1"> Donantes </a>
+            <a href="index.html#registroDonaciones"  class="botones1">Donaciones</a>
+            <a href="index.html#final"  class="botones1">  Estadísticas </a>
+        </nav>
+        <div id="espacio"></div>
+        <div class="stats" ><p >Total general: </p> <p id="idTotalGeneral"> </p></div>
+        <div class="separadorstats"></div>
+        <div class="stats"> <p >Monto donación mayor:</p> <p id="idMontoDonacionMayor"> </p></div>
+
+    </header>
+    <article>
+        <h2 class="titulo" >Registro de Donantes</h2>
+        <A id="registroDonantes"></A>
+            <form id="idFormDonantes">
+                <label for="nombre"> Nombre: </label>
+                <input type="text" id="nombre" placeholder="nombre" maxlength="20" required>
+                <label for="direccion" >Dirección: </label>
+                <input type="text" id="direccion" placeholder="direccion" maxlength="20" required>
+                <label for="telefono" >Teléfono: </label>
+                <input type="text" id="telefono" placeholder="telefono" maxlength="20" pattern="[0-9]+" required>
+                <input type="button" id="btnAgregarDonante" value="Agregar">
+            </form>
+            <hr>
+        <A id="registroDonaciones"></A>
+        <section id="seccion2">
+            <h2 class="titulo" >Registro de Donaciones</h2>
+                <form id="idFormRegistroDonaciones">
+                    <label for="idListaDesplegable"> Donante: </label>
+                    <select name="Donante" id="idListaDesplegable" required>
+                        <option value="" disabled selected>No hay datos</option>
+                        
+                    </select>
+                    <label for="modo"> Modo: </label>
+                    <select name="Modo" id="modo" required>
+                        <option value="">Seleccione</option>
+                        <option value="Efectivo">Efectivo</option>
+                        <option value="Transferencia">Transferencia</option>
+                        <option value="Canje">Canje</option>
+                        <option value="Mercaderia">Mercaderia</option>
+                        <option value="Cheque">Cheque</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <label for="monto">Monto: </label>
+                    <input type="number" id="monto"  min="1" required>
+                    <label for="comentarios">Comentarios: </label>
+                    <input type="text" id="comentarios" maxlength="20" >
+                    <input type="button" id="btnAgregarDonador" value="Agregar">
+                </form>
+            <hr>
+        </section>
+        <section>
+            <h3 class="titulo" >Donaciones registradas</h3>
+            <form>Orden:
+                <input type="radio" id="idCheckMonto" name="resaltar" onclick="cargarTabla()" checked>
+                <label for="idCheckMonto">monto decreciente </label>
+                <input type="radio" id="idCheckDonanteCreciente" name="resaltar" onclick="cargarTabla()">
+                <label for="idCheckDonanteCreciente">nombre donante creciente </label>
+            </form>
+                <table  class="tabla" id="idTabla">
+                </table>
+                <div id="separador2">
+                </div>
+                <label for="idResaltarFilas">Resaltar Filas: </label>
+                <input type="checkbox" id="idResaltarFilas" onclick="cargarTabla()">
+                <label for="idResaltarDeMonto">De monto: </label>
+                <input type="number" id="idResaltarDeMonto"  value="0" class="gris" oninput="cargarTabla()"> 
+        </section>
+        <A id="final"></A>
+        <section id="Estadisticas">
+            <h3 class="estadisticas" >Estadísticas</h3>
+            <div class="divstats" ><p class="p1">Cantidad total de donaciones:</p> <p class="p1" id="pCantTotalDonaciones">  0 </p></div>
+            <div class="divstats" > <p class="p1"> Promedio por donación: </p><p class="p1" id="promedioDonaciones"> 0 </p></div>
+            <div class="divstats" >  <p class="p1">Donante que más veces dono:</p><p id="idMaxDonante1" class="p1"></p> <ul id="idMaxDonante" ></ul></div>
+            <div id="piechart" style="width: 450px; height: 250px;"></div>
+        </section>
+    </article>
+    <footer id="pie"> Cátedra de programación - Programación 1 - Primer Semestre 2021 - Maria Matto 227056 - Tatiana Poznanski 221056
+    </footer>
+</body>
+</html>
+
