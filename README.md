@@ -1,6 +1,6 @@
 # Obligatorio Primer Semestre 2021, Programación 1, Universidad ORT Uruguay
 
-El objetivo de este proyecto final fue crear un sitio para registrar las donaciones a una organización benéfica y obtener sticas utilizando `POO`.
+El objetivo de este proyecto final fue crear un sitio para registrar las donaciones a una organización benéfica y obtener estadisticas utilizando `POO`.
 
 ## Tecnologías:
 - JavaScript
